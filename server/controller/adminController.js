@@ -15,6 +15,9 @@ const Student = require("../models/student");
 const Faculty = require("../models/faculty");
 const Admin = require("../models/admin");
 
+//Utils
+const sendUserRegEmail = require("../utils/sendUserRegEmail");
+
 function dobAsPassword(
   dateOfBirth = new Date(
     new Date().setFullYear(Number(new Date().getFullYear() - 18))
@@ -109,6 +112,8 @@ module.exports = {
       });
 
       await newAdmin.save();
+
+      await sendUserRegEmail(newAdmin, "admin");
 
       return res.status(200).json({
         success: true,
@@ -276,6 +281,8 @@ module.exports = {
 
       await newStudent.save();
 
+      await sendUserRegEmail(newStudent, "student");
+
       res.status(200).json({ result: newStudent });
     } catch (err) {
       res
@@ -386,6 +393,8 @@ module.exports = {
       });
 
       await newFaculty.save();
+
+      await sendUserRegEmail(newFaculty, "faculty");
 
       res.status(200).json({ result: newFaculty });
     } catch (err) {
