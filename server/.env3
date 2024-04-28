@@ -1,0 +1,16 @@
+PORT = 3001
+
+MONGO_URI = mongodb+srv://college-erp:college-erp@cluster0.tlhbt7a.mongodb.net/college-erp
+
+JWT_SECRET = secretHaiKisiKoBtanaMt
+JWT_EXPIRE = 1d
+
+SMPT_SERVICE = gmail
+SMPT_HOST = smtp.gmail.com
+SMPT_PORT = 465
+SMPT_MAIL = sample.hvr@gmail.com
+SMPT_PASSWORD = zgccyhxjlqfrjefz
+
+CLOUDINARY_NAME = drgu0tbi8
+CLOUDINARY_API_KEY = 579537122699574
+CLOUDINARY_API_SECRET = KlX6S6wQ5wKY6qIacl9FdLKxmno

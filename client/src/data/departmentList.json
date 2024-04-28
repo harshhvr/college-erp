@@ -1,0 +1,8 @@
+[
+  { "nameAbbr": "E.C.E", "name": "E.C.E." },
+  { "nameAbbr": "C.S.E", "name": "Computer Science & Engineering" },
+  { "nameAbbr": "E.E.E", "name": "E.E.E." },
+  { "nameAbbr": "I.T", "name": "Information Technology Engineering" },
+  { "nameAbbr": "Mechanical", "name": "Mechanical Engineering" },
+  { "nameAbbr": "Civil", "name": "Civil Engineering" }
+]
