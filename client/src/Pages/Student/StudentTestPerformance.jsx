@@ -46,7 +46,12 @@ const StudentTestPerformance = () => {
                                 <td>{res.subject.subjectName}</td>
                                 <td>{res.marks}</td>
                                 <td>{res.totalMarks}</td>
-                                <td>{(res.marks / res.totalMarks) * 100}%</td>
+                                <td>
+                                  {((res.marks / res.totalMarks) * 100).toFixed(
+                                    2
+                                  )}
+                                  %
+                                </td>
                               </tr>
                             )
                           )}
