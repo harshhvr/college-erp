@@ -6,7 +6,7 @@ const passport = require("passport");
 const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
-dotenv.config();
+dotenv.config({ path: "./config/config.env" });
 
 //MIDDILWARES
 const app = express();
